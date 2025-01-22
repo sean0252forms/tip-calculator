@@ -13,7 +13,8 @@ var amountVal = amount.value
 amountVal=Number(amountVal)
 var tax = document.getElementById("tax")
 taxAmt = tax.value
-var taxVal=convertAmt(taxAmt/100*amountVal)
-outputTax.innerHTML=taxVal
-outputTotal.innerText=amountVal+taxVal
+var taxVal=taxAmt/100*amountVal
+outputTax.innerHTML=convertAmt(taxVal)
+var total=convertAmt(amountVal+taxVal)
+outputTotal.innerText=total
 },1)

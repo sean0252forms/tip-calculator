@@ -9,12 +9,26 @@
 </head>
 
 <body>
-  <input type="text" name="" id="amountIn">
-  <input type="range" name="" id="tax" value="15">
-  <div id="outputTax">
+  <input type="text" name="" id="amountIn" type="number">
+  <input type="range" name="" id="tax" value="15" step="1" width="10vw">
+  <div class="info">
+    <div>
+      Tax:
+    </div>
+    <div id="taxPercent">
+
+    </div>
+    <div id="outputTax">
+    </div>
   </div>
-  <div id="outputTotal">
-</div>
+  <div class="info">
+    <div>
+      Total:
+    </div>
+
+    <div id="outputTotal">
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 

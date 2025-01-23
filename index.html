@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<form>
+    <input type="text" id="username" autocomplete="username">
+    <input type="password" id="password" autocomplete="current-password">
+    <button onclick="signIn()"></button>
+</form>
     <div id="message">
-        <button onclick="changeMsg()"></button>
+        <button onclick="changeMsg()" id="msgBtn" hidden></button>
         <div id="title">Alert</div>
         <div id="message_body">
             idskds
         </div>
     </div>
+    <script src="login.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

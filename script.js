@@ -7,6 +7,7 @@ return USDollar.format(price)
 }
 setInterval(function(){
 var outputTax = document.getElementById("outputTax")
+var taxPercent = document.getElementById("taxPercent")
 var outputTotal = document.getElementById("outputTotal")
 var amount = document.getElementById("amountIn")
 var amountVal = amount.value
@@ -17,4 +18,5 @@ var taxVal=taxAmt/100*amountVal
 outputTax.innerHTML=convertAmt(taxVal)
 var total=convertAmt(amountVal+taxVal)
 outputTotal.innerText=total
+taxPercent.innerText=taxAmt+"%"
 },1)

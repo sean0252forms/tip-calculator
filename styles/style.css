@@ -30,3 +30,10 @@
   grid-area: 1 / 2 / span 1 / span 2;
   width: 100%;
 }
+body{
+  background-color: #FFC000
+}
+input{
+  border-color: black;
+  border-width: 1.5px
+}
